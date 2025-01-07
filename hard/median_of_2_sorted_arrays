@@ -1,0 +1,31 @@
+// problem no 4 in leetcode
+// Median of two sorted Arrays
+
+#include <bits/stc++.h>
+using namespace std;
+
+class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> ans;
+        int m = nums1.size();
+        int n = nums2.size();
+        for(int i = 0;i<m;i++){
+            ans.push_back(nums1[i]);
+        }
+        for(int i = 0;i<n;i++){
+            ans.push_back(nums2[i]);
+        }
+        sort(ans.begin(), ans.end());
+
+        int k = ans.size();
+        int p = k/2.0;
+        int q = (k/2.0) - 1;
+        if((k % 2) == 0){
+            return (ans[p]+ans[q])/2.0;
+        }
+        else{
+            return ans[p];
+        }
+    }
+};
