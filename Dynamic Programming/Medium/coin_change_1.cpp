@@ -1,3 +1,5 @@
+// UNBOUNDED KNAPSACK
+
 // This is a Dp Code for Coin change problem 1 where number of ways coins can be added to get a sum
 
 // Examples:
