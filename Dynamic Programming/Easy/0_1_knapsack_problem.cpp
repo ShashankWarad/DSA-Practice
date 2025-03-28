@@ -1,4 +1,6 @@
 //  This is DP code for 0 - 1 Knapsack problem
+//  This is a type of code after which only modified code are asked 
+
 
 int static dp[102][1002]; // This is because of constraints where n <= 100 & W <= 1000
 memset(dp, -1, sizeof(dp));
